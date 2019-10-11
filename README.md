@@ -8,4 +8,4 @@ Use `docker pull qainsights/jmeter511` command to pull the image.
 
 Use `docker run qainsights/jmeter511` command to run JMeter inside the container. Below is the sample command which executes the sample JMeter test plan located in the `examples` folder.
 
-`docker run qainsights/jmeter511 -n -t .\examples\CSVSample.jmx -l Run1.jtl` 
+`docker run qainsights/jmeter511 -n -t .\examples\CSVSample.jmx -l Run1.jtl`
