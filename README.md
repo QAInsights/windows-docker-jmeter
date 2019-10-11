@@ -1,5 +1,5 @@
 # JMeter Docker for Windows
-This repo helps you to run Apache JMeter in your Windows container. It uses the JMeter 5.1.1 on Windows machine with OpenJDK.
+This repo helps you to run Apache JMeter in your Windows container. It uses the JMeter 5.1.1 on Windows Server Core with OpenJDK.
 
 ## How to run JMeter on Windows Container?
 First you need to install Docker for Windows. Second, you need compatible Windows version as your base OS. If there is a conflict, you may not be able to run it. 
@@ -16,6 +16,6 @@ If you want to mount your host machine, you can use the below sample command.
 
 You can keep your JMeter files in your host machine and pass it to the container for execution. Once the execution is done, you can view the log/jtl files in your host machine.
 
-Important Notes: 
+* Important Notes: *
 make sure you are adding .\ in front of folder names, as the entry point leverages PowerShell. 
 no need to add `jmeter` command, just append -n -t <yourJMeterTestName>/jmx file name.
