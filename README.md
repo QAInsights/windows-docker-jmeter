@@ -19,3 +19,9 @@ You can keep your JMeter files in your host machine and pass it to the container
 **Important Notes:**
 * make sure you are adding .\ in front of folder names, as the entry point leverages PowerShell. 
 * no need to add `jmeter` command, just append -n -t <yourJMeterTestName>/jmx file name.
+  
+```docker
+if (isAwesome){
+  return true
+}
+```
