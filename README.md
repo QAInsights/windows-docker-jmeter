@@ -14,4 +14,6 @@ If you want to mount your host machine, you can use the below sample command.
 
 `docker run -it -v C:\apache-jmeter-5.1.1\bin\examples:C:\apache-jmeter-5.1.1\apache-jmeter-5.1.1\bin\examples qainsights/jmeter511 -n -t .\examples\CSVSample.jmx -l .\examples\Run1Log.jtl`
 
+You can keep your JMeter files in your host machine and pass it to the container for execution. Once the execution is done, you can view the log/jtl files in your host machine.
+
 Important Note: make sure you are adding .\ in front of folder names, as the entry point leverages PowerShell. 
