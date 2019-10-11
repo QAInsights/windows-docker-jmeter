@@ -9,11 +9,19 @@ If you want to build this image, download this repo and use the below command in
 ## How to run JMeter on Windows Container?
 First you need to install Docker for Windows. Second, you need compatible Windows version as your base OS. If there is a conflict, you may not be able to run it. 
 
-Use `docker pull qainsights/jmeter511` command to pull the image. 
+Use `docker pull qainsights/jmeter511` command to pull the image. This will pull the image from Docker Hub.
 
 Use `docker run qainsights/jmeter511` command to run JMeter inside the container. Below is the sample command which executes the sample JMeter test plan located in the `examples` folder.
 
 `docker run qainsights/jmeter511 -n -t .\examples\CSVSample.jmx -l Run1.jtl`
+
+To run in interactive mode, use the below command.
+
+`docker run -it qainsights/jmeter511 -n -t .\examples\CSVSample.jmx -l Run1.jtl`
+
+To remove the container once the execution is completed, use the below command.
+
+`docker run -rm qainsights/jmeter511 -n -t .\examples\CSVSample.jmx -l Run1.jtl`
 
 If you want to mount your host machine, you can use the below sample command.
 
