@@ -7,7 +7,7 @@ If you want to build this image, download this repo and use the below command in
 `docker build img_from .`
 
 ## How to run JMeter on Windows Container?
-First you need to install Docker for Windows. Second, you need compatible Windows version as your base OS. If there is a conflict, you may not be able to run it. 
+First you need to install Docker for Windows. You can use your laptop with Windows 10 Pro or spin up an AWS EC2 instance under free tier. Second, you need compatible Windows version as your base OS. If there is a conflict, you may not be able to run it. 
 
 Use `docker pull qainsights/jmeter511` command to pull the image. This will pull the image from Docker Hub.
 
