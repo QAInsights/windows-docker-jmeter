@@ -1,4 +1,4 @@
-# Windows Docker Container for Apache JMeter
+# Windows Docker Container for Apache JMeter 5.1.1
 This repo helps you to run Apache JMeter in your Windows container. It uses the JMeter 5.1.1 on Windows Server Core with OpenJDK.
 
 ## Build
