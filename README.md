@@ -45,3 +45,6 @@ You can keep your JMeter files in your host machine and pass it to the container
 * https://docs.docker.com/
 * https://docs.microsoft.com/en-us/virtualization/windowscontainers/about/
 * http://jmeter.apache.org/
+
+# Donate
+<a target="_blank" href="https://www.buymeacoffee.com/qainsights"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a tea"><span style="margin-left:15px;font-size:28px !important;">Buy me a tea</span></a>
