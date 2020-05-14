@@ -1,5 +1,5 @@
-# Windows Docker Container for Apache JMeter 5.2
-This repo helps you to run Apache JMeter in your Windows container. It uses the JMeter 5.2 on Windows Server Core with OpenJDK.
+# Windows Docker Container for Apache JMeter
+This repo helps you to run Apache JMeter in your Windows container. It uses the JMeter on Windows Server Core with OpenJDK.
 
 ## Build
 If you want to build this image, download this repo and use the below command in docker.
@@ -25,7 +25,7 @@ To remove the container once the execution is completed, use the below command.
 
 If you want to mount your host machine, you can use the below sample command.
 
-`docker run -it -v C:\apache-jmeter-5.2\bin\examples:C:\apache-jmeter-5.2\apache-jmeter-5.2\bin\examples qainsights/windows-docker-jmeter -n -t .\examples\CSVSample.jmx -l .\examples\Run1Log.jtl`
+`docker run -it -v C:\apache-jmeter-5.2.1\bin\examples:C:\apache-jmeter-5.2.1\apache-jmeter-5.2.1\bin\examples qainsights/windows-docker-jmeter -n -t .\examples\CSVSample.jmx -l .\examples\Run1Log.jtl`
 
 You can keep your JMeter files in your host machine and pass it to the container for execution. Once the execution is done, you can view the log/jtl files in your host machine.
 
