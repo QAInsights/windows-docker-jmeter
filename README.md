@@ -4,7 +4,7 @@ This repo helps you to run Apache JMeter in your Windows container. It uses the 
 ## Build
 If you want to build this image, download this repo and use the below command in docker.
 
-`docker build -t img_from .`
+`docker build --build-arg JMETER_VERSION=5.2.1 -t jmeter-windows .`
 
 ## How to run JMeter on Windows Container?
 First you need to install Docker for Windows. You can use your laptop with Windows 10 Pro or spin up an AWS EC2 instance under free tier. Second, you need compatible Windows version as your base OS. If there is a conflict, you may not be able to run it. 
