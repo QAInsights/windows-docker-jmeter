@@ -1,5 +1,5 @@
 # Prints the message with the passed arguments
-Write-Host "Execution Started in non gui mode with the following arguments: $args"
+Write-Host "Execution Started in CLI mode with the following arguments: $args"
 
 # Constructs the JMeter command and execute it
 $command = -join(".\jmeter ","$args")

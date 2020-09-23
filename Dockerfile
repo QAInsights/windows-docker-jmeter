@@ -18,7 +18,9 @@ RUN Expand-Archive /apache-jmeter-$env:JMETER_VERSION.zip -DestinationPath /apac
 
 # Copies the entrypoint.ps1
 COPY /entrypoint.ps1 /entrypoint.ps1
+COPY /jmeter-plugins-install.ps1 /jmeter-plugins-install.ps1
 
+RUN ["powershell.exe","/jmeter-plugins-install.ps1"]
 # Sets the Working directory
 WORKDIR ${JMETER_HOME}/bin
 
