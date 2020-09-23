@@ -1,3 +1,5 @@
+**If you are looking for JMeter and Plugins  docker file, please refer this [repository](https://github.com/QAInsights/windows-docker-jmeter-plugins).** 
+
 # Windows Docker Container for Apache JMeter
 This repo helps you to run Apache JMeter in your Windows container. It uses the JMeter on Windows Server Core with OpenJDK.
 
