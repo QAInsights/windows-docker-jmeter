@@ -2,14 +2,14 @@
 # Indicates that the windowsservercore along with OpenJDK will be used as the base image.
 FROM openjdk:8-windowsservercore
 
-ARG JMETER_VERSION="5.4.1"
+ARG JMETER_VERSION="5.4.3"
 ENV JMETER_HOME /apache-jmeter-$JMETER_VERSION/apache-jmeter-$JMETER_VERSION/
 
 # Metadata indicating an image maintainer.
 LABEL maintainer="NaveenKumar Namachivayam" \
       website="www.qainsights.com"
 
-# Downloads JMeterfrom one of the mirrors, if you prefer to change, you can change the URL
+# Downloads JMeter from one of the mirrors, if you prefer to change, you can change the URL
 RUN Invoke-WebRequest -URI https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-$env:JMETER_VERSION.zip \
 -UseBasicParsing -Outfile /apache-jmeter-$env:JMETER_VERSION.zip
 
